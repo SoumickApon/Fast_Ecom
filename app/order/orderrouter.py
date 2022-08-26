@@ -8,7 +8,7 @@ from .orderservice import OrderService
 router = APIRouter(prefix="/order", tags=["Order"])
 
 
-@router.get("/")
+@router.get("/get_all")
 def getAll(db: Session = Depends(get_db)):
     return OrderService.getAll(db=db)
 
