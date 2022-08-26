@@ -1,6 +1,6 @@
 import os
 import sys
-import stripe
+#import stripe
 from sqlalchemy.orm import Session
 from fastapi import Depends
 from dto.orderschema import OrderCreatePlaceOrder
@@ -10,7 +10,7 @@ import random
 # from uuid import uuid4
 
 
-stripe.api_key = ("sk_test_51LaZJCH37F4oWOx0xCVtdqMYPsOZaCEP6bdS0wGVFrYEeO0sCuILjfWSp4NeG76zFpP7pFSukyCQ00e0mrMcLRzH004rugJEeU")
+#stripe.api_key = ("sk_test_51LaZJCH37F4oWOx0xCVtdqMYPsOZaCEP6bdS0wGVFrYEeO0sCuILjfWSp4NeG76zFpP7pFSukyCQ00e0mrMcLRzH004rugJEeU")
 
 
 class OrderService:
